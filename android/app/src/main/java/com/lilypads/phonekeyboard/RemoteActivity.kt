@@ -131,7 +131,7 @@ class RemoteActivity : Activity() {
             background = Ui.shape(context, Ui.CARD, 12)
             setPadding(dp(10), dp(8), dp(10), dp(8))
             gravity = Gravity.TOP or Gravity.START
-            inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_MULTILINE
+            inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_MULTI_LINE
         }
         input.addTextChangedListener(watcher)
         input.setOnKeyListener { _, code, e -> onInputKey(code, e) }
